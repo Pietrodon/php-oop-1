@@ -1,7 +1,23 @@
 <?php
 
+class Movie {
+    public $name;
+    public $year;
+    public $actor;
+}
 
+$bond = new Movie ();
+    $bond->name = '007';
+    $bond->year = 2020;
+    $bond->actor = 'daniel craig';
+
+
+
+    var_dump($bond);
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
