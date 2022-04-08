@@ -4,16 +4,17 @@ class Movie {
     public $name;
     public $year;
     public $actor;
+
+    function __construct( string $name, int $year, string $actor){
+        $this->name =$name;
+        $this->year =$year;
+        $this->actor =$actor;
+
+    }
 }
 
-$bond = new Movie ();
-    $bond->name = '007';
-    $bond->year = 2020;
-    $bond->actor = 'daniel craig';
+$bond = new Movie ("007",2020,"Daniel Craig");
 
-
-
-    var_dump($bond);
 ?>
 
 
@@ -28,7 +29,15 @@ $bond = new Movie ();
 </head>
 <body>
     <h1>
-        
+        Il titolo del film è  <?php echo $bond->name ?>
     </h1>
+    <ul>
+        <li>
+            L'anno di uscita del film è <?php echo $bond->year ?>
+        </li>
+        <li>
+            L'attore protagonista è  <?php echo $bond->actor ?>
+        </li>
+    </ul>
 </body>
 </html>
